@@ -1,0 +1,10 @@
+Python program to combine the strings of the form short+long+short, with the shorter string on the outside and the longer string on the inside. Note: string length can not be same but they may be empty(length 0)
+
+s1=input("enter 1st string\n")
+s2=input("enter 2nd string\n")
+a=len(s1)
+b=len(s2)
+if(a>b):
+  print(s2+s1+s2)
+else:
+  print(s1+s2+s1)
