@@ -1,0 +1,45 @@
+C Program to generate first N Magic Numbers.
+
+#include <stdio.h>
+
+int magicNo(int n)
+
+{
+
+    int pro=1,answer=0;
+
+    while(n)
+
+     {
+		
+          pro=(pro*5);
+
+          if(n & 1)
+
+          {
+	
+	answer+=pro;
+           }
+          n=n>>1;
+ 
+     }
+ 
+return answer;
+
+}
+
+int main()
+
+{
+
+   int n;
+
+   printf("Enter N:\n");
+
+   scanf("%d",&n);
+
+   printf("The magic no is: %d",magicNo(n));
+
+   return 0;
+
+}
